@@ -1,3 +1,7 @@
+/* For tablets, try and change position absolute to flex */
+/* This will allow the image to show on small height */
+/* Screens */
+
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -29,6 +33,10 @@ header {
   bottom: 3rem;
 }
 
+.header_socials a {
+  font-size: 2.5rem;
+}
+
 .header_socials::after {
   content: '';
   width: 1px;
@@ -47,9 +55,10 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   /* padding: 2rem .5rem 1.5rem; */
+  z-index: -1;
 }
 
-/* ================ Image me =========================== */
+/* ================ Scroll =========================== */
 
 .scroll_down {
   position: absolute;
@@ -64,15 +73,16 @@ header {
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    /* height: 68vh; */
   }
+  
 }
 
-/* ==================== Media queries (medium devices) =-=================== */
+/* ==================== Media queries (small devices) =-=================== */
 
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    /* height: 100vh; */
   }
   .header_socials,
   .scroll_down {

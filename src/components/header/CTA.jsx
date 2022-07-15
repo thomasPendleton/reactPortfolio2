@@ -1,5 +1,5 @@
 import React from 'react'
-// import CV from ''
+// import CV from '' attach and import resume here=
 
 const CTA = () => {
   return (
