@@ -51,6 +51,9 @@
     padding: 2rem;
     margin: 0 auto;
   }
+  .experience_content{
+    padding: 1rem;
+  }
 }
 
 /* ==================== Media queries (small devices) =-=================== */
@@ -58,5 +61,9 @@
 @media screen and (max-width: 600px) {
   .experience_container{
     gap: 1rem;
+  }
+  .experience_container > div {
+    width: 100%; 
+    padding: 1rem 2rem;
   }
 }
