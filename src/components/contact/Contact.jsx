@@ -4,6 +4,7 @@ import './contact.css'
 import { MdOutlineMail } from 'react-icons/md'
 import { SiMinutemailer } from 'react-icons/si'
 import { AiOutlinePhone } from 'react-icons/ai'
+import { HiOutlineClipboardCopy } from 'react-icons/hi'
 
 const Contact = () => {
   const form = useRef()
@@ -26,7 +27,11 @@ const Contact = () => {
           console.log(error.text)
         }
       )
-      e.target.reset()
+    e.target.reset()
+  }
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('thomaspendletondev@gmail.com')
   }
 
   return (
@@ -38,21 +43,21 @@ const Contact = () => {
           <article className="contact_option">
             <MdOutlineMail className="contact_option-icon" />
             <h4>Email</h4>
-            <h5>thomas6576@yahoo.com</h5>
+            <h5 onClick={() => copyEmail()}>thomaspendletondev@gmail.com</h5>
             <a href="mailto:thomas6576@yahoo.com">Send an Email</a>
           </article>
-          <article className="contact_option">
+          {/* <article className="contact_option">
             <SiMinutemailer className="contact_option-icon" />
             <h4>Messenger</h4>
             <h5>thomas6576@yahoo.com</h5>
             <a href="https:">Send an Email</a>
-          </article>
-          <article className="contact_option">
+          </article> */}
+          {/* <article className="contact_option">
             <AiOutlinePhone className="contact_option-icon" />
             <h4>Email</h4>
             <h5>thomas6576@yahoo.com</h5>
             <a href="mailto:thomas6576@yahoo.com">Send a message</a>
-          </article>
+          </article> */}
         </div>
 
         <form ref={form} onSubmit={sendEmail}>

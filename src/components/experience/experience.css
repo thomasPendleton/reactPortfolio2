@@ -6,7 +6,7 @@
 
 .experience_container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2.4rem 2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -37,6 +37,7 @@
 
 .experience_details-icon{
     margin-top: 6px; 
+    font-size: 1.2rem;
     color: var(--color-primary)
 }
 

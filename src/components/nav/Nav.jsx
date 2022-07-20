@@ -5,6 +5,7 @@ import { FaUserCircle } from 'react-icons/fa'
 import { FaUserGraduate } from 'react-icons/fa'
 import { RiServiceFill } from 'react-icons/ri'
 import { FaMailBulk } from 'react-icons/fa'
+import {FaCode} from 'react-icons/fa'
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#header')
@@ -32,11 +33,11 @@ const Nav = () => {
         <FaUserGraduate />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav('#services')}
-        className={activeNav === '#services' ? 'active' : ''}
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNav === '#portfolio' ? 'active' : ''}
       >
-        <RiServiceFill />
+        <FaCode />
       </a>
       <a
         href="#contact"

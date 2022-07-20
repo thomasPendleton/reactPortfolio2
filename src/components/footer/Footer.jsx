@@ -2,11 +2,12 @@ import React from 'react'
 import './footer.css'
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 
-
 const Footer = () => {
   return (
-    <footer >
-      <a className="footer_logo" href="#header">ThomasPendleton</a>
+    <footer>
+      <a className="footer_logo" href="#header">
+        Thomas Pendleton
+      </a>
       <ul className="permalinks">
         <li>
           <a href="#header">Home</a>

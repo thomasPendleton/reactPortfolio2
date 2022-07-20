@@ -1,12 +1,12 @@
 import IMG1 from './assets/proj1.png'
 import IMG2 from './assets/proj2.png'
 import IMG3 from './assets/proj3.png'
-// import IMG4 from './assets/proj1(2).png'
+import IMG4 from './assets/proj1(2).png'
 
 export const data = [
   {
     id: 1,
-    image: IMG1,
+    image: IMG4,
     title: 'Math Game',
     github: 'https://github.com/thomasPendleton/mathGame',
     demo: 'https://thomaspendleton.github.io/mathGame/',
