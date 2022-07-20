@@ -47,6 +47,11 @@ header {
   height: 2rem;
   background: var(--color-primary);
 }
+.double_arrow_icon{
+  position: absolute;
+  top: 5px;
+  right: -20px;
+}
 
 /* ================ Image me =========================== */
 .me {

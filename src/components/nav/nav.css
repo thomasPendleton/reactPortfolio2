@@ -4,29 +4,29 @@
   bottom: 2rem;
   left: 50%;
   transform: translatex(-50%);
-  padding: .7rem 1.7rem;
+  padding: 0.7rem 1.7rem;
   background-color: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
   border-radius: 3rem;
-    backdrop-filter: blur(15px);
+  backdrop-filter: blur(2px);
 }
 
 .navigation a {
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
 }
-
 
 .navigation a:hover {
-    background: rgba(0, 0, 0, 0.3)
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.navigation a.active{
-    background: var(--color-bg);
+.navigation a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
 }
