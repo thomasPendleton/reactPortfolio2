@@ -25,6 +25,7 @@
 .contact_option:hover {
   background-color: transparent;
   color: var(--color-primary);
+  border-color: var(--color-primary-variant);
 }
 
 .contact_option-icon {
