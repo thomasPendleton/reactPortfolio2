@@ -6,7 +6,11 @@ import { FaDribbbleSquare } from 'react-icons/fa'
 const HeaderSocials = () => {
   return (
     <div className="header_socials">
-      <a href="https://linkedin.com" rel="noreferrer" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/thomas-pendleton-330365133/"
+        rel="noreferrer"
+        target="_blank"
+      >
         <FaLinkedin />
       </a>
       <a
