@@ -32,8 +32,8 @@
 
 .experience_details {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  /* justify-content: center; */
+  gap: 1.5rem;
 }
 
 .experience_details-icon {

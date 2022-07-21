@@ -2,12 +2,13 @@ import React from 'react'
 import './testimonials.css'
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
 
 // Import Swiper styles
 import 'swiper/css'
+import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import { data } from '../../testimonial_data'
@@ -19,10 +20,12 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <Swiper
         className="container testimonials_container"
-        modules={[Pagination]}
+        cssMode={true}
+        navigation={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         spaceBetween={40}
         slidesPerView={1}
-        pagination={{ clickable: true }}
+        pagination={true}
       >
         {data.map((person, idx) => {
           const { avatar, name, review } = person

@@ -2,6 +2,7 @@ import IMG1 from './assets/proj1.png'
 import IMG2 from './assets/proj2.png'
 import IMG3 from './assets/proj3.png'
 import IMG4 from './assets/proj1(2).png'
+import IMG5 from './assets/mathGameMobile.png'
 
 export const data = [
   {

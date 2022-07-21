@@ -29,6 +29,10 @@
     background-color: var(--color-primary);
 }
 
+.swiper-button-prev, .swiper-button-next {
+  transform: translateY(-50%);
+}
+
 /* ==================== Media queries (medium devices) =-=================== */
 
 @media screen and (max-width: 1024px) {
