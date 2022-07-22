@@ -19,13 +19,13 @@ const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
       <Swiper
-        className="container testimonials_container"
-        cssMode={true}
+        loop={true}
         navigation={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         spaceBetween={40}
         slidesPerView={1}
         pagination={true}
+        className="container testimonials_container"
       >
         {data.map((person, idx) => {
           const { avatar, name, review } = person
