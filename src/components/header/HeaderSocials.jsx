@@ -20,9 +20,9 @@ const HeaderSocials = () => {
       >
         <FaGithubSquare />
       </a>
-      <a href="https://dribbble.com" rel="noreferrer" target="_blank">
+      {/* <a href="https://dribbble.com" rel="noreferrer" target="_blank">
         <FaDribbbleSquare />
-      </a>
+      </a> */}
     </div>
   )
 }

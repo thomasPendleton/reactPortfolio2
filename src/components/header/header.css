@@ -20,7 +20,11 @@ header {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
+  
 }
+
+
 
 /* ================ Socials =========================== */
 .header_socials {
@@ -40,7 +44,7 @@ header {
 .header_socials::after {
   content: '';
   width: 1px;
-  height: 2rem;
+  height: 3rem;
   background: var(--color-primary);
 }
 .double_arrow_icon {

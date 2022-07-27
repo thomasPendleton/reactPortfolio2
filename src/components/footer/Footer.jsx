@@ -29,7 +29,7 @@ const Footer = () => {
         </li> */}
       </ul>
 
-      <div className="footer_socials">
+      {/* <div className="footer_socials">
         <a href="https://facebook.com">
           <BsFacebook />
         </a>
@@ -39,7 +39,7 @@ const Footer = () => {
         <a href="https://twitter.com">
           <BsTwitter />
         </a>
-      </div>
+      </div> */}
       <div className="footer_copyright">
         <small>&copy; Thomas Pendleton. 2022</small>
       </div>
