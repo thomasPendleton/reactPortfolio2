@@ -69,4 +69,10 @@
     padding: 1rem 2rem;
     width: 95%;
   }
+  .experience_details h4 {
+    font-size: 0.9rem;
+  }
+  .experience_content {
+    padding: 1rem 0;
+  }
 }
