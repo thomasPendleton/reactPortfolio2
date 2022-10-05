@@ -30,6 +30,13 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.description{
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  letter-spacing: .05rem;
+  word-spacing: .2rem;
+}
 
 /* ==================== Media queries (medium devices) =-=================== */
 
