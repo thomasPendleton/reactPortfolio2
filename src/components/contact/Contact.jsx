@@ -44,7 +44,7 @@ const Contact = () => {
             <MdOutlineMail className="contact_option-icon" />
             <h4>Email</h4>
             <h5 onClick={() => copyEmail()}>thomaspendletondev@gmail.com</h5>
-            <a href="mailto:thomas6576@yahoo.com">Send an Email</a>
+            <a href="mailto:thomaspendletondev@gmail.com">Send an Email</a>
           </article>
           {/* <article className="contact_option">
             <SiMinutemailer className="contact_option-icon" />
