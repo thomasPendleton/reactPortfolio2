@@ -29,13 +29,6 @@ const Experience = () => {
             <article className="experience_details">
               <IoMdCheckmarkCircleOutline className="experience_details-icon" />
               <div>
-                <h4>Bootstrap</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience_details">
-              <IoMdCheckmarkCircleOutline className="experience_details-icon" />
-              <div>
                 <h4>Javascript</h4>
                 <small className="text-light">Experienced</small>
               </div>
@@ -44,6 +37,13 @@ const Experience = () => {
               <IoMdCheckmarkCircleOutline className="experience_details-icon" />
               <div>
                 <h4>React</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience_details">
+              <IoMdCheckmarkCircleOutline className="experience_details-icon" />
+              <div>
+                <h4>Redux Toolkit</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
