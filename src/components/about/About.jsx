@@ -36,11 +36,17 @@ const About = () => {
               <small>40+ completed</small>
             </article>
           </div>
-          <p>
+          {/* <p>
             Seeking to become your next Web developer. As an Automotive Master
             Technician, with over 15 years experience, I plan to leverage my communication,
             determination, and problem solving skills to build your next project.
             
+          </p> */}
+          
+          <p>
+          Seeking a position as Software Engineer in a professional setting that will enable me to learn 
+new skills and have the ability to utilize the ones I have acquired through my education and
+work experience.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
