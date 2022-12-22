@@ -87,7 +87,7 @@ const Experience = () => {
             <article className="experience_details">
               <IoMdCheckmarkCircleOutline className="experience_details-icon" />
               <div>
-                <h4>GraphQL</h4>
+                <h4>Postgres</h4>
                 <small className="text-light">Basic</small>
               </div>
             </article>
