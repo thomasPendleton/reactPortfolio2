@@ -11,19 +11,16 @@ import Footer from "./components/footer/Footer"
 
 function App() {
   const [activeNav, setActiveNav] = useState("#header")
-  const [display, setDisplay] = useState(false)
 
   const handleIntersections = (entries, observer) => {
     entries.forEach((entry) => {
+      console.log(entry.target.className)
       if (entry.isIntersecting) {
         setActiveNav(`#${entry.target.className}`)
-        if(entry.target.className === 'portfolio'){
-          setDisplay(true)
-        }
       }
-      
     })
   }
+  // console.log(activeNav);
 
   return (
     <>
@@ -31,8 +28,8 @@ function App() {
       <Header handleIntersections={handleIntersections} />
       <About handleIntersections={handleIntersections} />
       <Experience handleIntersections={handleIntersections} />
+      <Portfolio handleIntersections={handleIntersections} />
       {/* <Services /> */}
-      <Portfolio handleIntersections={handleIntersections} display={display}/>
       {/* <Testimonials /> */}
       <Contact handleIntersections={handleIntersections} />
       <Footer />

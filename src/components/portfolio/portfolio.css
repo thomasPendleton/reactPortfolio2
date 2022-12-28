@@ -9,10 +9,6 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
-  /* transform: translateX(100vw); */
-}
-.show{
-  /* transform: translateX(0); */
 }
 
 .portfolio_item:hover {

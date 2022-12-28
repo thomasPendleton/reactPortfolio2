@@ -1,15 +1,14 @@
 import React, { useEffect, useRef } from "react"
 import "./portfolio.css"
-
 import { data } from "../../data"
 
-const Portfolio = ({ handleIntersections, display }) => {
+const Portfolio = ({ handleIntersections }) => {
   const portfolioRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersections, {
       root: null,
-      threshold: 0.5,
+      threshold: .3,
     })
     observer.observe(portfolioRef.current)
     return () => observer.disconnect()
@@ -25,7 +24,7 @@ const Portfolio = ({ handleIntersections, display }) => {
           return (
             <article
               key={id}
-              className={display ? "portfolio_item show" : "portfolio_item"}
+              className="portfolio_item"
             >
               <div className="portfolio_item-image">
                 <img src={image} alt={title} />

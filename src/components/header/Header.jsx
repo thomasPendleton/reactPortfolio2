@@ -11,7 +11,7 @@ const Header = ({ handleIntersections }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersections, {
       root: null,
-      threshold: 0.5,
+      threshold: 0.3,
     })
     observer.observe(headerRef.current)
     return () => observer.disconnect()
