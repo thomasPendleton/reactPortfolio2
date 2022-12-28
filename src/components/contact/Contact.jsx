@@ -1,23 +1,32 @@
-import React, { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import './contact.css'
-import { MdOutlineMail } from 'react-icons/md'
-import { SiMinutemailer } from 'react-icons/si'
-import { AiOutlinePhone } from 'react-icons/ai'
-import { HiOutlineClipboardCopy } from 'react-icons/hi'
+import React, { useRef, useEffect } from "react"
+import emailjs from "@emailjs/browser"
+import "./contact.css"
+import { MdOutlineMail } from "react-icons/md"
+import { SiMinutemailer } from "react-icons/si"
+import { AiOutlinePhone } from "react-icons/ai"
+import { HiOutlineClipboardCopy } from "react-icons/hi"
 
-const Contact = () => {
+const Contact = ({ handleIntersections }) => {
   const form = useRef()
+  const contactRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersections, {
+      threshold: 0.5,
+    })
+    observer.observe(contactRef.current)
+    return () => observer.disconnect()
+  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
       .sendForm(
-        'service_rxz80ct',
-        'template_h6p4nf6',
+        "service_rxz80ct",
+        "template_h6p4nf6",
         form.current,
-        'nALBAX8wa83_oBRmN'
+        "nALBAX8wa83_oBRmN"
       )
       .then(
         (result) => {
@@ -31,11 +40,11 @@ const Contact = () => {
   }
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('thomaspendletondev@gmail.com')
+    navigator.clipboard.writeText("thomaspendletondev@gmail.com")
   }
 
   return (
-    <section id="contact">
+    <section id="contact" ref={contactRef} className="contact">
       <h5>Get in Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact_container">

@@ -1,10 +1,20 @@
-import React from 'react'
-import './experience.css'
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
+import React, { useRef, useEffect } from "react"
+import "./experience.css"
+import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 
-const Experience = () => {
+const Experience = ({ handleIntersections }) => {
+  const experienceRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersections, {
+      threshold: 0.65,
+    })
+    observer.observe(experienceRef.current)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section id="experience">
+    <section id="experience" ref={experienceRef} className="experience">
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 

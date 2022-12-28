@@ -1,11 +1,21 @@
-import React from 'react'
-import './portfolio.css'
+import React, { useEffect, useRef } from "react"
+import "./portfolio.css"
 
-import { data } from '../../data'
+import { data } from "../../data"
 
-const Portfolio = () => {
+const Portfolio = ({ handleIntersections }) => {
+  const portfolioRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersections, {
+      threshold: 0.5,
+    })
+    observer.observe(portfolioRef.current)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section id="portfolio">
+    <section id="portfolio" ref={portfolioRef} className="portfolio">
       <h5>My recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
@@ -35,5 +45,4 @@ const Portfolio = () => {
     </section>
   )
 }
-
 export default Portfolio
