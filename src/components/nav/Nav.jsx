@@ -7,42 +7,43 @@ import { RiServiceFill } from 'react-icons/ri'
 import { FaMailBulk } from 'react-icons/fa'
 import { FaCode } from 'react-icons/fa'
 
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#header')
+const Nav = ({ activeNav, setActiveNav }) => {
+  // const [activeNav, setActiveNav] = useState('#header')
+  console.log(activeNav);
   return (
     <nav className="navigation">
       <a
         href="#header"
-        onClick={() => setActiveNav('#header')}
-        className={activeNav === '#header' ? 'active' : ''}
+        onClick={() => setActiveNav("#header")}
+        className={activeNav === "#header" ? "active" : ""}
       >
         <FaHome />
       </a>
       <a
         href="#about"
-        onClick={() => setActiveNav('#about')}
-        className={activeNav === '#about' ? 'active' : ''}
+        onClick={() => setActiveNav("#about")}
+        className={activeNav === "#about" ? "active" : ""}
       >
         <FaUserCircle />
       </a>
       <a
         href="#experience"
-        onClick={() => setActiveNav('#experience')}
-        className={activeNav === '#experience' ? 'active' : ''}
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
       >
         <FaUserGraduate />
       </a>
       <a
         href="#portfolio"
-        onClick={() => setActiveNav('#portfolio')}
-        className={activeNav === '#portfolio' ? 'active' : ''}
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
         <FaCode />
       </a>
       <a
         href="#contact"
-        onClick={() => setActiveNav('#contact')}
-        className={activeNav === '#contact' ? 'active' : ''}
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
       >
         <FaMailBulk />
       </a>
