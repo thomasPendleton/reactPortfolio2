@@ -3,11 +3,12 @@ import "./portfolio.css"
 
 import { data } from "../../data"
 
-const Portfolio = ({ handleIntersections }) => {
+const Portfolio = ({ handleIntersections, display }) => {
   const portfolioRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersections, {
+      root: null,
       threshold: 0.5,
     })
     observer.observe(portfolioRef.current)
@@ -22,7 +23,10 @@ const Portfolio = ({ handleIntersections }) => {
         {data.map((item) => {
           const { id, image, title, github, demo, tech } = item
           return (
-            <article key={id} className="portfolio_item">
+            <article
+              key={id}
+              className={display ? "portfolio_item show" : "portfolio_item"}
+            >
               <div className="portfolio_item-image">
                 <img src={image} alt={title} />
               </div>

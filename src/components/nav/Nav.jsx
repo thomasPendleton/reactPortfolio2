@@ -9,7 +9,6 @@ import { FaCode } from 'react-icons/fa'
 
 const Nav = ({ activeNav, setActiveNav }) => {
   // const [activeNav, setActiveNav] = useState('#header')
-  console.log(activeNav);
   return (
     <nav className="navigation">
       <a

@@ -10,6 +10,7 @@ const Header = ({ handleIntersections }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersections, {
+      root: null,
       threshold: 0.5,
     })
     observer.observe(headerRef.current)

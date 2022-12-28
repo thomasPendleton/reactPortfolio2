@@ -7,6 +7,7 @@ const Experience = ({ handleIntersections }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersections, {
+      root: null,
       threshold: 0.65,
     })
     observer.observe(experienceRef.current)

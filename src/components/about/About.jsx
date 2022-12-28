@@ -10,6 +10,7 @@ const About = ({ handleIntersections }) => {
  
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersections, {
+      root: null,
       threshold: 0.7,
     })
     observer.observe(aboutRef.current)
